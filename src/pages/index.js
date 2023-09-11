@@ -47,7 +47,7 @@ const PortofoliosSection = () => {
   ]
   
   return (
-    <div className="container mx-auto mt-32 mb-48 px-8 sm:px-0">
+    <div className="container mx-auto mt-32 px-8 sm:px-0">
       <h1 className="text-3xl font-black text-center">
         <span className="text-primary">We Create Products </span>
         <span className="text-positive">Tailored </span>
@@ -84,12 +84,33 @@ const PortofoliosSection = () => {
   )
 }
 
+const Testimonials = () => {
+  return (
+    <div className="bg-[#706FE505] px-8 mt-28 mb-48">
+      <div className="container mx-auto py-10 md:px-32">
+        <img src="/dots.png" />
+        <h2 className="text-3xl font-black text-primary text-center -mt-10">Testimonials</h2>
+        <h2 className="text-3xl font-black text-primary text-center">What They Says</h2>
+
+        <div className="grid grid-cols-3 mt-10">
+          <img src="/quotes_left.png" className="ml-auto mr-16" />
+          <p className="text-justify mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus vel lobortis tincidunt fames quisque mauris at diam. Nullam morbi ipsum turpis amet id posuere torto quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+          <img src="/quotes_right.png" className="ml-16" />
+        </div>
+
+        <img src="/dots.png" className="ml-auto" />
+      </div>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <div>
       <Jumbotron />
       <PartnerSection />
       <PortofoliosSection />
+      <Testimonials />
     </div>
   )
 }
